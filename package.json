@@ -1,0 +1,22 @@
+{
+  "name": "react-cra-components-lerna",
+  "version": "1.0.0",
+  "description": "Create react app with components lib managed by Lerna",
+  "main": "index.js",
+  "author": "Lalitwadee Damyos",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "storybook": "lerna run storybook --stream",
+    "start": "lerna run start --stream",
+    "test": "lerna run test --stream",
+    "eslint": "lerna run eslint --stream",
+    "prettier": "lerna run prettier --stream"
+  },
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  }
+}
